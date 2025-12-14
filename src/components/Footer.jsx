@@ -133,9 +133,9 @@ const Footer = () => {
 
         <button
           onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
-          className="mt-3 md:mt-0 flex items-center gap-2 text-indigo-400 hover:text-indigo-300 transition"
+          className="mt-3 md:mt-0 flex items-center gap-2 text-indigo-400 hover:text-indigo-800 transition"
         >
-          Back to top <ArrowUp size={16} />
+          Back to top <ArrowUp size={20} />
         </button>
       </div>
     </footer>

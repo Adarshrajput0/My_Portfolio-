@@ -33,8 +33,8 @@ const Education = () => {
 
           <div>
             <div className="flex items-center gap-2 mb-2">
-              <School className="text-indigo-600" />
-              <h3 className="text-lg font-semibold">
+              <School className="text-blue-800" />
+              <h3 className="text-lg text-blue-800 font-semibold">
                 High School & Senior Secondary (CBSE)
               </h3>
             </div>
@@ -65,7 +65,7 @@ const Education = () => {
           <div>
             <div className="flex items-center gap-2 mb-2">
               <University className="text-indigo-600" />
-              <h3 className="text-lg font-semibold">
+              <h3 className="text-lg text-blue-800 font-semibold">
                 Bachelor of Technology (B.Tech) – CSE
               </h3>
             </div>

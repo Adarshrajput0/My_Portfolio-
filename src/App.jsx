@@ -58,8 +58,10 @@
 
 import Header from "./components/Header";
 import AboutMe from "./components/AboutMe";
+import Education from "./components/Education";
 import Skills from "./components/Skills";
 import Projects from "./components/Projects";
+import Hobbies from "./components/Hobbies";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 
@@ -73,6 +75,10 @@ function App() {
         <AboutMe />
       </section>
 
+      <section id="education">
+        <Education />
+      </section>
+
       {/* SKILLS */}
       <section id="skills">
         <Skills />
@@ -81,6 +87,9 @@ function App() {
       {/* PROJECTS */}
       <section id="projects">
         <Projects />
+      </section>
+      <section id="hobbies">
+        <Hobbies />
       </section>
 
       {/* CONTACT */}
