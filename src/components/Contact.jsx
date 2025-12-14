@@ -19,21 +19,23 @@ import { FaLinkedin, FaGithub, FaGlobe } from "react-icons/fa"; // Portfolio ico
 const Contact = () => {
   return (
     <Section icon={<Mail />} sectionTitle="Contact">
-      <div className="text-gray-700 space-y-4">
+      <div className="text-white-900 font-bold space-y-5">
         <p>
-          <strong>Phone:</strong> +91 9142368127
+          <strong className="text-xl font-bold">Phone:</strong>
+          <a className="text-xl font-bold"> +91 9142368127</a>
         </p>
         <p>
-          <strong>Email:</strong>{" "}
+          <strong className="text-xl font-bold">Email:</strong>{" "}
           <a
             href="mailto:adarshrajput2931@gmail.com"
-            className="text-blue-600 hover:underline"
+            className="text-blue-300 text-xl font-bold hover:underline"
           >
             adarshrajput2931@gmail.com
           </a>
         </p>
         <p>
-          <strong>Location:</strong> Waghodia, Vadodara, Gujarat 📍
+          <strong className="text-xl font-bold">Location:</strong>
+          <a className="text-xl font-bold"> Waghodia, Vadodara, Gujarat 📍</a>
         </p>
 
         {/* Icons for clickable links */}
@@ -42,7 +44,7 @@ const Contact = () => {
             href="https://www.linkedin.com/in/adarsh-rajput-bb5215346"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-blue-700 text-2xl hover:scale-110 transition-transform"
+            className="text-blue-700 text-4xl hover:scale-110 transition-transform"
           >
             <FaLinkedin />
           </a>
@@ -50,15 +52,16 @@ const Contact = () => {
             href="https://github.com/adarshrajput0"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-gray-800 text-2xl hover:scale-110 transition-transform"
+            className="text-gray-800 text-4xl hover:scale-110 transition-transform"
           >
             <FaGithub />
           </a>
           <a
-            href="https://adarsh-rajput-portfolio.com" // replace with your portfolio URL
+            href="https://Adarshrajput0.github.io/My_Portfolio-/
+" // replace with your portfolio URL
             target="_blank"
             rel="noopener noreferrer"
-            className="text-green-600 text-2xl hover:scale-110 transition-transform"
+            className="text-green-600 text-4xl hover:scale-110 transition-transform"
           >
             <FaGlobe />
           </a>

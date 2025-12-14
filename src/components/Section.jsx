@@ -11,47 +11,55 @@
 // };
 // export default Section;
 
+//
+
+//
+
 const Section = ({ icon, children, sectionTitle }) => {
   return (
-    <div className="my-12 mx-6">
+    <div className="my-14 mx-6">
       <div
         className="
           relative overflow-hidden
-          rounded-2xl
-          bg-white
-          p-7
-          shadow-md
-          transition-all duration-500
-          hover:shadow-xl hover:-translate-y-1
+          rounded-3xl
+          bg-gradient-to-br from-gray-900/80 via-gray-800/80 to-gray-700/80
+          backdrop-blur-xl
+          p-8
+          shadow-2xl
+          transition-all duration-500 ease-out
+          hover:shadow-3xl hover:-translate-y-2
         "
       >
-        {/* Gradient Accent Bar */}
-        <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-indigo-500 via-purple-500 to-blue-500" />
+        {/* Top Gradient Accent */}
+        <div className="absolute top-0 left-0 w-full h-1.5 bg-gradient-to-r from-yellow-400 via-red-500 to-pink-500" />
 
-        {/* Soft Glow */}
-        <div className="absolute -top-10 -right-10 w-40 h-40 bg-indigo-200/30 rounded-full blur-3xl" />
+        {/* Glow Effects */}
+        <div className="absolute -top-16 -right-16 w-56 h-56 bg-yellow-400/20 rounded-full blur-3xl" />
+        <div className="absolute -bottom-16 -left-16 w-56 h-56 bg-pink-400/20 rounded-full blur-3xl" />
 
         {/* Header */}
-        <div className="relative flex items-center gap-4 mb-5">
+        <div className="relative flex items-center gap-5 mb-6">
           <div
             className="
-            p-3 rounded-full
-            bg-indigo-100
-            text-indigo-600
-            shadow-inner
-          "
+              p-4 rounded-2xl
+              bg-gradient-to-br from-yellow-100 to-red-100
+              text-yellow-600
+              shadow-inner
+            "
           >
             {icon}
           </div>
 
           <div>
-            <h2 className="text-2xl font-bold text-gray-800">{sectionTitle}</h2>
-            <div className="w-12 h-[3px] mt-1 rounded-full bg-indigo-500" />
+            <h2 className="text-2xl font-extrabold text-white tracking-tight">
+              {sectionTitle}
+            </h2>
+            <div className="w-14 h-[3px] mt-1 rounded-full bg-gradient-to-r from-yellow-400 to-red-500" />
           </div>
         </div>
 
         {/* Content */}
-        <div className="relative text-gray-600 leading-relaxed text-[15.5px]">
+        <div className="relative text-gray-300 leading-relaxed text-[15.5px]">
           {children}
         </div>
       </div>

@@ -12,73 +12,79 @@
 // };
 // export default Education;
 
+//
+
 import Section from "./section";
-import { GraduationCap } from "lucide-react";
-import schoolImage from "../assets/school.png"; // Add your school image
-import universityImage from "../assets/university.png"; // Add your university image
+import { GraduationCap, School, University } from "lucide-react";
+import schoolImage from "../assets/school.png";
+import universityImage from "../assets/university.png";
 
 const Education = () => {
   return (
     <Section icon={<GraduationCap />} sectionTitle="Education">
-      {/* 10th & 12th School Info */}
-      <div className="mb-8">
-        <h3 className="text-lg font-semibold">
-          High School & Senior Secondary
-        </h3>
-        <p className="text-sm text-gray-700">
-          Completed 10th and 12th from CBSE Board, East Champaran, Bihar with
-          70% in both.
-        </p>
-        <ul className="text-sm text-gray-600 list-disc list-inside mt-2">
-          <li>School: Ms Memorial Public School</li>
-          <li>Location: East Champaran, Bihar</li>
-          <li>Board: CBSE</li>
-          <li>Percentage: 70% in both 10th and 12th</li>
-          <li>
-            Subjects: Science, Mathematics, English, Computer Science, etc.
-          </li>
-          <li>
-            Achievements: Participated in science fairs, school-level
-            competitions
-          </li>
-        </ul>
-        <img
-          src={schoolImage}
-          alt="School"
-          className="w-32 h-32 mt-3 rounded shadow-md"
-        />
-      </div>
+      <div className="space-y-8 mt-6">
+        {/* School Card */}
+        <div className="bg-slate-50 rounded-2xl shadow hover:shadow-lg transition p-6 flex flex-col md:flex-row gap-6">
+          <img
+            src={schoolImage}
+            alt="School"
+            className="w-32 h-32 object-cover rounded-xl shadow-md"
+          />
 
-      {/* B.Tech CSE Info */}
-      <div>
-        <h3 className="text-lg font-semibold">
-          Bachelor of Technology (B.Tech) - CSE
-        </h3>
-        <p className="text-sm text-gray-700">
-          Currently pursuing 3rd year B.Tech in Computer Science & Engineering
-          at Parul University, Vadodara, Gujarat.
-        </p>
-        <ul className="text-sm text-gray-600 list-disc list-inside mt-2">
-          <li>University: Parul University</li>
-          <li>Location: Vadodara, Gujarat</li>
-          <li>Current Year: 3rd Year</li>
-          <li>
-            Major Subjects: Data Structures, Algorithms, DBMS, Operating
-            Systems, Web Development
-          </li>
-          <li>
-            Projects: Portfolio Website, Simple Flask App, Java Console Projects
-          </li>
-          <li>Skills Learned: Python, Java, HTML, CSS, JavaScript, SQL, Git</li>
-          <li>
-            Achievements: Participated in coding competitions and hackathons
-          </li>
-        </ul>
-        <img
-          src={universityImage}
-          alt="University"
-          className="w-32 h-32 mt-3 rounded shadow-md"
-        />
+          <div>
+            <div className="flex items-center gap-2 mb-2">
+              <School className="text-indigo-600" />
+              <h3 className="text-lg font-semibold">
+                High School & Senior Secondary (CBSE)
+              </h3>
+            </div>
+
+            <p className="text-sm text-gray-700 mb-3">
+              Completed 10th and 12th from CBSE Board, East Champaran, Bihar
+              with
+              <span className="font-medium"> 70% in both</span>.
+            </p>
+
+            <ul className="text-sm text-gray-600 list-disc list-inside space-y-1">
+              <li>School: Ms Memorial Public School</li>
+              <li>Location: East Champaran, Bihar</li>
+              <li>Subjects: Science, Mathematics, English, Computer Science</li>
+              <li>Activities: Science fairs & school-level competitions</li>
+            </ul>
+          </div>
+        </div>
+
+        {/* University Card */}
+        <div className="bg-slate-50 rounded-2xl shadow hover:shadow-lg transition p-6 flex flex-col md:flex-row gap-6">
+          <img
+            src={universityImage}
+            alt="University"
+            className="w-32 h-32 object-cover rounded-xl shadow-md"
+          />
+
+          <div>
+            <div className="flex items-center gap-2 mb-2">
+              <University className="text-indigo-600" />
+              <h3 className="text-lg font-semibold">
+                Bachelor of Technology (B.Tech) – CSE
+              </h3>
+            </div>
+
+            <p className="text-sm text-gray-700 mb-3">
+              Currently pursuing <span className="font-medium">3rd year</span>{" "}
+              B.Tech in Computer Science & Engineering at Parul University,
+              Vadodara, Gujarat.
+            </p>
+
+            <ul className="text-sm text-gray-600 list-disc list-inside space-y-1">
+              <li>University: Parul University</li>
+              <li>Core Subjects: DSA, DBMS, OS, Web Development</li>
+              <li>Projects: Portfolio Website, Flask App, Java Projects</li>
+              <li>Skills: Python, Java, HTML, CSS, JavaScript, SQL, Git</li>
+              <li>Achievements: Coding competitions & hackathons</li>
+            </ul>
+          </div>
+        </div>
       </div>
     </Section>
   );
