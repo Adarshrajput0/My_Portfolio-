@@ -1,17 +1,3 @@
-// import Section from "./section";
-// import { Sparkles } from "lucide-react";
-// const Hobbies = () => {
-//   return (
-//     <Section icon={<Sparkles />} sectionTitle="Hobbies">
-//       <p>
-//         Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis,
-//         repellat.
-//       </p>
-//     </Section>
-//   );
-// };
-// export default Hobbies;
-
 import Section from "./section";
 import { Sparkles } from "lucide-react";
 

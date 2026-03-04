@@ -15,6 +15,7 @@
 //
 
 import Section from "./section";
+import "./Education.css";
 import { GraduationCap, School, University } from "lucide-react";
 import schoolImage from "../assets/school.png";
 import universityImage from "../assets/university.png";
@@ -59,7 +60,9 @@ const Education = () => {
           <img
             src={universityImage}
             alt="University"
-            className="w-32 h-32 object-cover rounded-xl shadow-md"
+            className="w-32npm run build
+npm run build
+ h-32 object-cover rounded-xl shadow-md"
           />
 
           <div>
